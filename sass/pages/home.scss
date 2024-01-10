@@ -144,35 +144,29 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 15rem;
   background: $second-bg-color;
 
   .about-img img {
     width: 50vh;
     border-radius: 50%;
-    margin: 100px 100px 0 0;
   }
 
   .heading {
     text-align: left;
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
-  .about-content h2 {
+  .about-container h2 {
     text-align: left;
     line-height: 1.2;
   }
-  .about-content h3 {
-    font-size: 2.6rem;
+  .about-container h3 {
+    font-size: 4rem;
   }
 
-  .about-content p {
-    font-size: 1.6rem;
+  .about-container p {
+    font-size: 2rem;
     margin: 2rem 0 3rem;
   }
-  .btn {
-    padding: 20px;
-    margin: 15px 0;
-  }
 }
-
 //end about section
