@@ -20,6 +20,14 @@ body {
   color: #fff;
 }
 
+section {
+  min-height: 100vh;
+  padding: 7rem 8%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -38,6 +46,9 @@ body {
   font-weight: 600;
   cursor: default;
 }
+.header span {
+  color: #0ef;
+}
 .header .navbar a {
   font-size: 1.7rem;
   color: #fff;
@@ -52,6 +63,100 @@ body {
   font-size: 3.6rem;
   color: #fff;
   display: none;
+}
+
+section .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .home-img {
+  width: 75vh;
+}
+section .home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+section .home-content h3:nth-of-type(2) {
+  margin-bottom: 4rem;
+}
+section span {
+  color: #0ef;
+}
+section .home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+section .home-content p {
+  font-size: 1.6rem;
+}
+section .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem 0 3rem;
+  background: transparent;
+  border: 0.2rem solid #0ef;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #0ef;
+  margin: 3re 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+section .social-media a:hover {
+  background: #0ef;
+  color: #323946;
+  box-shadow: 0 0 1rem #0ef;
+}
+section .btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: #0ef;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #0ef;
+  font-size: 1.6rem;
+  color: #323946;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+section .btn:hover {
+  box-shadow: none;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #323946;
+}
+.about .about-img img {
+  width: 50vh;
+  border-radius: 50%;
+  margin: 100px 100px 0 0;
+}
+.about .heading {
+  text-align: left;
+  font-size: 4.5rem;
+}
+.about .about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+.about .about-content h3 {
+  font-size: 2.6rem;
+}
+.about .about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.about .btn {
+  padding: 20px;
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
