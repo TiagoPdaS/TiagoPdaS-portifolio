@@ -23,11 +23,12 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 7rem 8%;
+  padding: 6rem 10% 4rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
+
 //header menu section
 .header {
   position: fixed;
@@ -69,6 +70,7 @@ section {
 //header menu section
 
 //style section
+
 section {
   .home {
     display: flex;
@@ -76,7 +78,8 @@ section {
     align-items: center;
   }
   .home-img {
-    width: 75vh;
+    margin-top: 0%;
+    width: 80vh;
   }
 
   .home-content h3 {
@@ -170,3 +173,49 @@ section {
   }
 }
 //end about section
+
+//start section techs
+section.techs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  h2 {
+    margin-bottom: 5rem;
+    font-size: 4em;
+  }
+
+  .techs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .techs-container .techs-box {
+    flex: 1 1 30rem;
+    background: $second-bg-color;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid $bg-color;
+    transition: 0.5s ease;
+  }
+  .techs-container .techs-box:hover {
+    border-color: $main-color;
+    transform: scale(1.02);
+  }
+
+  .techs-box i {
+    font-size: 5rem;
+    color: $main-color;
+  }
+  .techs-box h3 {
+    font-size: 2.5rem;
+  }
+  .techs-box p {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+  }
+}

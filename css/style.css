@@ -22,7 +22,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 7rem 8%;
+  padding: 6rem 10% 4rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,8 @@ section .home {
   align-items: center;
 }
 section .home-img {
-  width: 75vh;
+  margin-top: 0%;
+  width: 80vh;
 }
 section .home-content h3 {
   font-size: 3.2rem;
@@ -152,6 +153,48 @@ section .btn:hover {
 .about .about-container p {
   font-size: 2rem;
   margin: 2rem 0 3rem;
+}
+
+section.techs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.techs h2 {
+  margin-bottom: 5rem;
+  font-size: 4em;
+}
+section.techs .techs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+section.techs .techs-container .techs-box {
+  flex: 1 1 30rem;
+  background: #323946;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid #1f242d;
+  transition: 0.5s ease;
+}
+section.techs .techs-container .techs-box:hover {
+  border-color: #0ef;
+  transform: scale(1.02);
+}
+section.techs .techs-box i {
+  font-size: 5rem;
+  color: #0ef;
+}
+section.techs .techs-box h3 {
+  font-size: 2.5rem;
+}
+section.techs .techs-box p {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
