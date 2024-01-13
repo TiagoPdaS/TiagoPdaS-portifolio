@@ -197,4 +197,119 @@ section.techs .techs-box p {
   margin: 1rem 0 2rem;
 }
 
+section.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #323946;
+}
+section.portfolio h2 {
+  margin-bottom: 4rem;
+  font-size: 4em;
+}
+section.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+section.portfolio .portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #1f242d;
+  overflow: hidden;
+  display: flex;
+}
+section.portfolio .portfolio-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+section.portfolio .portfolio-box:hover img {
+  transform: scale(1.1);
+}
+section.portfolio .portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+section.portfolio .portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+}
+section.portfolio .portfolio-layer h4 {
+  font-size: 3rem;
+}
+section.portfolio .portfolio-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+section.portfolio .portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: 50%;
+}
+section.portfolio .portfolio-layer a i {
+  font-size: 2rem;
+  color: #323946;
+}
+
+section.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contact h2 {
+  margin-bottom: 5rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #323946;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
 /*# sourceMappingURL=style.css.map */
