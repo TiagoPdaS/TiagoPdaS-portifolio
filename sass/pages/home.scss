@@ -115,7 +115,7 @@ section {
     width: 4rem;
     height: 4rem;
 
-    margin: 2rem 0 3rem;
+    margin: 2rem 1rem 3rem;
     background: transparent;
     border: 0.2rem solid $main-color;
     border-radius: 50%;
@@ -136,7 +136,7 @@ section {
     border-radius: 4rem;
     box-shadow: 0 0 1rem $main-color;
     font-size: 1.6rem;
-    color: $second-bg-color;
+    color: $text-color;
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
@@ -315,14 +315,16 @@ section.contact{
 
 }
   .contact h2{
-    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
   }
 
   .contact form{
-    max-width: 70rem;
+    max-width: 50rem;
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .contact form .input-box{
@@ -349,12 +351,12 @@ section.contact{
   }
 
   .contact form .btn{
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   //start wih footer
   .footer{
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -364,21 +366,27 @@ section.contact{
 
   .footer-text p{
     font-size: 1.6rem;
+    
+    text-align: center;
+   
   }
   .footer-iconTop a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem;
-    background-color: $main-color;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+   background-color: $main-color;
     border-radius: .8rem;
 }
 .footer-iconTop a:hover{
-  box-shadow: 0 0 1rem $main-color;
+  box-shadow: 0 0 2rem $main-color;
 }
 .footer-iconTop a i{
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: $second-bg-color;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1200px){
@@ -426,10 +434,18 @@ section.contact{
     flex-direction: column;
   }
   .home-content h3{
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
   .home-content h1{
     font-size: 5rem;
+  }
+  .home-content p{
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 5rem 3rem 5rem;
+
   }
 
   .home-img img{
