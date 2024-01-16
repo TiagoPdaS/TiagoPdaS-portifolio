@@ -62,7 +62,8 @@ section {
     margin-left: 4rem;
     transition: 0.3s;
   }
-  .navbar a:hover {
+  .navbar a:hover{
+  //,nav a.active
     color: $main-color;
   }
 }
@@ -228,6 +229,7 @@ section.techs {
 
 //start portfolio section
 section.portfolio{
+  margin: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +238,7 @@ section.portfolio{
 
 
   h2 {
-    margin-bottom: 4rem;
+    margin:1rem;
     font-size: 4em;
   }
 
