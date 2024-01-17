@@ -62,6 +62,9 @@ section {
 .header .navbar a:hover {
   color: #4b2c8a;
 }
+.header nav a.active {
+  color: #4b2c8a;
+}
 
 #menu-icon {
   font-size: 3.6rem;
@@ -358,7 +361,7 @@ section.contact {
 }
 
 .footer {
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -372,11 +375,10 @@ section.contact {
 }
 
 .footer-iconTop a {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+  padding: 0.8rem;
   background-color: #4b2c8a;
   border-radius: 0.8rem;
 }
@@ -386,7 +388,7 @@ section.contact {
 }
 
 .footer-iconTop a i {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #323946;
   justify-content: center;
   align-items: center;
@@ -403,6 +405,12 @@ section.contact {
   }
   section {
     padding: 10rem 3% 2rem;
+  }
+  .techs {
+    padding-bottom: 7rem;
+  }
+  .portfolio {
+    padding-bottom: 7rem;
   }
   .footer {
     padding: 2rem 3%;
@@ -435,7 +443,7 @@ section.contact {
     flex-direction: column;
   }
   .home-content h3 {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   .home-content h1 {
     font-size: 5rem;
@@ -455,7 +463,21 @@ section.contact {
   }
   .about img {
     width: 70vw;
-    margin-top: 4rem;
+    margin-top: 0.1rem;
+  }
+  .techs h2 {
+    margin-bottom: 3rm;
+  }
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
   }
 }
 
