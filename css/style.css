@@ -41,28 +41,34 @@ section {
   align-items: center;
   z-index: 100;
 }
-.header .header.sticky {
+
+.header.sticky {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
-.header .logo {
+
+.logo {
   font-size: 2.5rem;
   color: #fff;
   font-weight: 600;
   cursor: default;
 }
-.header span {
+
+span {
   color: #4b2c8a;
 }
-.header .navbar a {
+
+.navbar a {
   font-size: 1.7rem;
   color: #fff;
   margin-left: 4rem;
   transition: 0.3s;
 }
-.header .navbar a:hover {
+
+.navbar a:hover {
   color: #4b2c8a;
 }
-.header nav a.active {
+
+nav a.active {
   color: #4b2c8a;
 }
 
@@ -72,68 +78,41 @@ section {
   display: none;
 }
 
-section .relogio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  /* Serve para dar o espaçamento entre os itens. */
-  min-height: 0.5rem;
-  min-width: 0.5rem;
-  background: transparent;
-  border-radius: 10px;
-}
-section .relogio div {
-  display: flex;
-  flex-direction: column;
-  /* Serve para colocar os elementos um em baixo do outro. */
-  align-items: center;
-  justify-content: center;
-  min-height: 10.625rem;
-  min-width: 9.375rem;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
-  letter-spacing: 3px;
-}
-section .relogio span {
-  font-weight: bolder;
-  font-size: 3.75rem;
-  color: #fff;
-}
-section .relogio span.tempo {
-  font-size: 0.625rem;
-  color: #fff;
-}
-section .home {
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .home-img {
+
+.home-img {
   margin-top: 0%;
   width: 80vh;
 }
-section .home-content h3 {
+
+.home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
 }
-section .home-content h3:nth-of-type(2) {
+
+.home-content h3:nth-of-type(2) {
   margin-bottom: 4rem;
 }
-section span {
+
+span {
   color: #4b2c8a;
 }
-section .home-content h1 {
+
+.home-content h1 {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
 }
-section .home-content p {
+
+.home-content p {
   font-size: 1.6rem;
 }
-section .social-media a {
+
+.social-media a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -148,12 +127,52 @@ section .social-media a {
   margin: 3re 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
-section .social-media a:hover {
+
+.social-media a:hover {
   background: #4b2c8a;
   color: #323946;
   box-shadow: 0 0 1rem #4b2c8a;
 }
-section .btn {
+
+.home .relogio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* Serve para dar o espaçamento entre os itens. */
+  min-height: 0.5rem;
+  min-width: 0.5rem;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.relogio div {
+  display: flex;
+  flex-direction: column;
+  /* Serve para colocar os elementos um em baixo do outro. */
+  align-items: center;
+  justify-content: center;
+  min-height: 10.625rem;
+  min-width: 9.375rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  letter-spacing: 3px;
+}
+
+.relogio span {
+  font-weight: bolder;
+  font-size: 3.75rem;
+  color: #fff;
+}
+
+.relogio span.tempo {
+  font-size: 0.625rem;
+  color: #fff;
+}
+
+.btn {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: #4b2c8a;
@@ -165,7 +184,8 @@ section .btn {
   font-weight: 600;
   transition: 0.5s ease;
 }
-section .btn:hover {
+
+.btn:hover {
   box-shadow: none;
 }
 
@@ -176,44 +196,52 @@ section .btn:hover {
   gap: 15rem;
   background: #323946;
 }
-.about .about-img img {
+
+.about-img img {
   width: 50vh;
   border-radius: 50%;
 }
-.about .heading {
+
+.heading {
   text-align: left;
   font-size: 6rem;
 }
-.about .about-container h2 {
+
+.about-container h2 {
   text-align: left;
   line-height: 1.2;
 }
-.about .about-container h3 {
+
+.about-container h3 {
   font-size: 4rem;
 }
-.about .about-container p {
+
+.about-container p {
   font-size: 2rem;
   margin: 2rem 0 3rem;
 }
 
-section.techs {
+.techs {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-section.techs h2 {
+
+h2 {
   margin-bottom: 5rem;
   font-size: 4em;
 }
-section.techs .techs-container {
+
+.techs-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
-section.techs .techs-container .techs-box {
+
+.techs-container .techs-box {
   flex: 1 1 30rem;
   background: #323946;
   padding: 3rem 2rem 4rem;
@@ -222,23 +250,27 @@ section.techs .techs-container .techs-box {
   border: 0.2rem solid #1f242d;
   transition: 0.5s ease;
 }
-section.techs .techs-container .techs-box:hover {
+
+.techs-container .techs-box:hover {
   border-color: #4b2c8a;
   transform: scale(1.02);
 }
-section.techs .techs-box i {
+
+.techs-box i {
   font-size: 5rem;
   color: #4b2c8a;
 }
-section.techs .techs-box h3 {
+
+.techs-box h3 {
   font-size: 2.5rem;
 }
-section.techs .techs-box p {
+
+.techs-box p {
   font-size: 1.5rem;
   margin: 1rem 0 2rem;
 }
 
-section.portfolio {
+.portfolio {
   margin: 3rem;
   display: flex;
   justify-content: center;
@@ -246,31 +278,37 @@ section.portfolio {
   flex-wrap: wrap;
   background: #323946;
 }
-section.portfolio h2 {
+
+h2 {
   margin: 1rem;
   font-size: 4em;
 }
-section.portfolio .portfolio-container {
+
+.portfolio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
-section.portfolio .portfolio-container .portfolio-box {
+
+.portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem #1f242d;
   overflow: hidden;
   display: flex;
 }
-section.portfolio .portfolio-box img {
+
+.portfolio-box img {
   width: 100%;
   transition: 0.5s ease;
 }
-section.portfolio .portfolio-box:hover img {
+
+.portfolio-box:hover img {
   transform: scale(1.1);
 }
-section.portfolio .portfolio-box .portfolio-layer {
+
+.portfolio-box .portfolio-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -286,17 +324,21 @@ section.portfolio .portfolio-box .portfolio-layer {
   transform: translateY(100%);
   transition: 0.5s ease;
 }
-section.portfolio .portfolio-box:hover .portfolio-layer {
+
+.portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
-section.portfolio .portfolio-layer h4 {
+
+.portfolio-layer h4 {
   font-size: 3rem;
 }
-section.portfolio .portfolio-layer p {
+
+.portfolio-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
 }
-section.portfolio .portfolio-layer a {
+
+.portfolio-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -305,7 +347,8 @@ section.portfolio .portfolio-layer a {
   background: #fff;
   border-radius: 50%;
 }
-section.portfolio .portfolio-layer a i {
+
+.portfolio-layer a i {
   font-size: 2rem;
   color: #323946;
 }
@@ -475,11 +518,46 @@ section.contact {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 620px) {
-  .portfolio-container {
+@media (max-width: 620px) {
+  .social-media {
+    margin: 0 25% 0 25%;
+  }
+  .home {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .home span {
+    font-size: 25px;
+  }
+  .home-img {
+    text-align: center;
+  }
+  .about {
     display: flex;
-    grid-column: auto;
-    background: red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    background: #323946;
+  }
+  .about h2 {
+    text-align: center;
+  }
+  .portfolio .heading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.8rem;
+  }
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-iconTop {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 }
 
