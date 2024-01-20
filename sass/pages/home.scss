@@ -20,6 +20,7 @@ html {
 body {
   background: $bg-color;
   color: $text-color;
+
 }
 
 section {
@@ -527,9 +528,12 @@ section.contact{
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 620px) {
   .portfolio-container{
-    grid-template-columns: repeat(1, 2fr);
+   display: flex;
+    grid-column: auto;
+    background: red;
     
    }
 }
+

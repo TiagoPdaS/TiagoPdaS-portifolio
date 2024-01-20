@@ -475,9 +475,11 @@ section.contact {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 620px) {
   .portfolio-container {
-    grid-template-columns: repeat(1, 2fr);
+    display: flex;
+    grid-column: auto;
+    background: red;
   }
 }
 
