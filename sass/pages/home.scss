@@ -417,14 +417,29 @@ section.contact {
   html {
     font-size: 55%;
   }
+  .home{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 @media (max-width: 991px) {
   .header {
-    padding: 2rem 3%;
+    padding: 2rem 10%;
   }
-  section {
-    padding: 10rem 3% 2rem;
+  .home{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
+  .home-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  
+  
   .techs {
     padding-bottom: 7rem;
   }
@@ -440,6 +455,11 @@ section.contact {
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+  }
+  .home{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .navbar {
     position: absolute;
