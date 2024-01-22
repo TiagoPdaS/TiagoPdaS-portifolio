@@ -192,27 +192,27 @@ span {
   gap: 15rem;
   background: $bg-dark;
 }
-  .about-img img {
-    width: 50vh;
-    border-radius: 50%;
-  }
+.about-img img {
+  width: 50vh;
+  border-radius: 50%;
+}
 
-  .heading {
-    text-align: left;
-    font-size: 6rem;
-  }
-  .about-container h2 {
-    text-align: left;
-    line-height: 1.2;
-  }
-  .about-container h3 {
-    font-size: 4rem;
-  }
+.heading {
+  text-align: left;
+  font-size: 6rem;
+}
+.about-container h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+.about-container h3 {
+  font-size: 4rem;
+}
 
-  .about-container p {
-    font-size: 2rem;
-    margin: 2rem 0 3rem;
-  }
+.about-container p {
+  font-size: 2rem;
+  margin: 2rem 0 3rem;
+}
 //END about section
 
 //START section techs
@@ -425,15 +425,12 @@ section.contact {
   .header {
     padding: 2rem 10%;
   }
-  .home{
+  .home {
     text-align: center;
     justify-content: center;
     align-items: center;
   }
- 
 
-  
-  
   .techs {
     padding-bottom: 7rem;
   }
@@ -450,7 +447,7 @@ section.contact {
   #menu-icon {
     display: block;
   }
-  .home{
+  .home {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -461,7 +458,7 @@ section.contact {
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: $bg-color;
+    background: $bg-dark;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
@@ -522,46 +519,38 @@ section.contact {
   .social-media {
     margin: 0 25% 0 25%;
   }
-  .home{
+  .home {
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-  .home span{
- font-size: 25px;
+  .home span {
+    font-size: 25px;
   }
-
-  .home-img {
+ .home-img {
     text-align: center;
   }
-
   .about {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 15rem;
-    background: $second-bg-color;
-   
   }
   .about h2 {
     text-align: center;
   }
-
-  
-  .portfolio .heading{
+  .portfolio .heading {
     display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      font-size:3.8rem ;
-     
-    }
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.8rem;
+  }
   .portfolio-container {
     grid-template-columns: 1fr;
   }
-  .footer-iconTop{
-    
+  .footer-iconTop {
     align-items: center;
     text-align: center;
     justify-content: center;

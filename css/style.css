@@ -479,7 +479,7 @@ section.contact {
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: #1f242d;
+    background: black;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
@@ -549,7 +549,6 @@ section.contact {
     justify-content: center;
     align-items: center;
     gap: 15rem;
-    background: #323946;
   }
   .about h2 {
     text-align: center;
