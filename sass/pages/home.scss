@@ -36,7 +36,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: $bg-color;
+  background: $bg-dark;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +77,7 @@ nav a.active {
 
 //START home section
 .home {
+  background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +125,7 @@ span {
 }
 .social-media a:hover {
   background: $main-color;
-  color: $second-bg-color;
+  color: $bg-white;
   box-shadow: 0 0 1rem $main-color;
 }
 
@@ -189,7 +190,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 15rem;
-  background: $second-bg-color;
+  background: $bg-dark;
 }
   .about-img img {
     width: 50vh;
@@ -216,6 +217,7 @@ span {
 
 //START section techs
 .techs {
+  background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,12 +263,12 @@ h2 {
 
 //START portfolio section
 .portfolio {
-  margin: 3rem;
+  margin: 3rem $bg-dark;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: $second-bg-color;
+  background: $bg-dark;
 }
 h2 {
   margin: 1rem;
@@ -334,6 +336,7 @@ h2 {
 
 //start contact form
 section.contact {
+  background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,7 +409,7 @@ section.contact {
 }
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: $second-bg-color;
+  color: $bg-white;
   justify-content: center;
   align-items: center;
 }
@@ -417,12 +420,6 @@ section.contact {
   html {
     font-size: 55%;
   }
-  .home{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
 }
 @media (max-width: 991px) {
   .header {
@@ -433,10 +430,7 @@ section.contact {
     justify-content: center;
     align-items: center;
   }
-  .home-img img {
-    width: 70vw;
-    margin-top: 4rem;
-  }
+ 
 
   
   

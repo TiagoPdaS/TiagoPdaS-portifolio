@@ -35,7 +35,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: #1f242d;
+  background: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,6 +79,7 @@ nav a.active {
 }
 
 .home {
+  background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +131,7 @@ span {
 
 .social-media a:hover {
   background: #4b2c8a;
-  color: #323946;
+  color: white;
   box-shadow: 0 0 1rem #4b2c8a;
 }
 
@@ -194,7 +195,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 15rem;
-  background: #323946;
+  background: black;
 }
 
 .about-img img {
@@ -222,6 +223,7 @@ span {
 }
 
 .techs {
+  background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,12 +273,12 @@ h2 {
 }
 
 .portfolio {
-  margin: 3rem;
+  margin: 3rem black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #323946;
+  background: black;
 }
 
 h2 {
@@ -354,6 +356,7 @@ h2 {
 }
 
 section.contact {
+  background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,7 +435,7 @@ section.contact {
 
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: #323946;
+  color: white;
   justify-content: center;
   align-items: center;
 }
@@ -440,11 +443,6 @@ section.contact {
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
-  }
-  .home {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media (max-width: 991px) {
@@ -455,10 +453,6 @@ section.contact {
     text-align: center;
     justify-content: center;
     align-items: center;
-  }
-  .home-img img {
-    width: 70vw;
-    margin-top: 4rem;
   }
   .techs {
     padding-bottom: 7rem;
