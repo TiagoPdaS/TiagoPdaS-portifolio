@@ -105,6 +105,7 @@
       <div class="home-img">
         <img src="images/header-img.svg" alt="image home" />
       </div>
+    
     </section>
 
     <!--About me section desing-->
@@ -231,17 +232,20 @@
     <!--start contact form-->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="#">
+     <form id="formulario"  method="POST">
+        <!-- campos do formulário aqui -->
+        
         <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email address">
+          <input type="text" placeholder="Full Name" id="nome" required>
+          <input type="email" placeholder="Email address" id="email" required>
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Mobile Number">
           <input type="text" placeholder="Email Subject">
         </div>
-        <textarea name="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
+        <textarea name="mensagem" cols="30" rows="10" placeholder="Your Message"required id="mensagem"></textarea>
+        <input  id="enviar" type="submit" value="Send Message" class="btn">
+       
       </form>
     </section>
 
@@ -262,5 +266,8 @@
     <!--custom js-->
     <script src="js/script.js"></script>
     <script src="js/clock.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
   </body>
 </html>

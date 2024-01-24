@@ -23,7 +23,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 4rem 10% 4rem;
+  padding: 10rem 10% 4rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +55,7 @@ section {
 
 span {
   color: #4b2c8a;
+  text-decoration: underline;
 }
 
 .navbar a {
@@ -82,9 +83,7 @@ span {
 }
 
 .home-img img {
-  margin-top: 5%;
-  width: 80vh;
-  max-width: 450px;
+  width: 70vh;
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -258,6 +257,7 @@ nome de cada item*/
 .about-img img {
   width: 50vh;
   border-radius: 50%;
+  margin-left: 50px;
 }
 
 .heading {
@@ -289,7 +289,7 @@ nome de cada item*/
 
 h2 {
   margin-bottom: 5rem;
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 .techs-container {
@@ -338,9 +338,9 @@ h2 {
   background: black;
 }
 
-h2 {
+.portfolio h2 {
   margin: 1rem;
-  font-size: 4em;
+  font-size: 5rem;
 }
 
 .portfolio-container {
@@ -413,6 +413,7 @@ h2 {
 }
 
 section.contact {
+  margin-top: 15px;
   background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
@@ -634,6 +635,7 @@ section.contact {
   }
   .techs h2 {
     margin-bottom: 3rm;
+    font-size: 4rem;
   }
   .portfolio h2 {
     margin-bottom: 3rem;
