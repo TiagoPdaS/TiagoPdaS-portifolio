@@ -291,6 +291,12 @@ nome de cada item*/
   align-items: center;
   flex-wrap: wrap;
 }
+
+.techs img{
+  width: 100%;
+  height: auto;
+padding: 0;
+}
 h2 {
   margin-bottom: 5rem;
   font-size: 4rem;
@@ -305,20 +311,20 @@ h2 {
 }
 .techs-container .techs-box {
   flex: 1 1 30rem;
-  background: $second-bg-color;
+ // background: $second-bg-color;
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.2rem solid $bg-color;
+  border: 0.4rem solid $bg-color;
   transition: 0.5s ease;
 }
 .techs-container .techs-box:hover {
+  transform: scale(1.08);
   border-color: $main-color;
-  transform: scale(1.02);
 }
 .techs-box i {
   font-size: 5rem;
-  color: $main-color;
+  color: $bg-white;
 }
 .techs-box h3 {
   font-size: 2.5rem;
@@ -328,78 +334,6 @@ h2 {
   margin: 1rem 0 2rem;
 }
 //END about section
-
-
-//start with animated cards techs
-.card-project{
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: $bg-dark;
-  min-height: 100vh;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
- 
-}
-
-.card-project::before{
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: linear-gradient(#0f0,#ff0);
-  clip-path: circle(35% at right 90%);
-}
-
-.card-project::after{
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: linear-gradient(rgb(83,4,230),rgb(255, 0, 0));
-  clip-path: circle(35% at 0% 10%);
-}
-
-.card{
-  width: 240px;
-  height: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
- background-color: rgba(255, 255, 255, 0.1);
-  z-index: 1;
-  border-radius: 20px;
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
-  backdrop-filter: blur(8px);
-  box-shadow: -10px 15px 50px #000;
-  margin: 25px;
-  
-}
-.card img{
-
-  padding: 10px;
-}
-
-.card h1{
-  color: black;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px #000;
-  
-}
-
-.card p{
-  color: black;
-}
-//end animated cards
-
 
 //START portfolio section
 .portfolio {
@@ -746,6 +680,7 @@ section.contact {
     margin-bottom: 3rem;
   }
 
+  
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }

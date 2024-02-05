@@ -43,13 +43,13 @@ ScrollReveal({
     reset: true,
     distance: '80px',
     duration: 3000,
-    delay:300
+    delay:350
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin:'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin:'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img, .techs-container ', { origin:'left' });
-ScrollReveal().reveal('.home-content p, .about-content, .clock', { origin:'right' });
+ScrollReveal().reveal('.home-content p, .about-content, .about-container h3, .about-container p, .clock', { origin:'right' });
 
 /* =============typed js======================*/
 const typed = new Typed('.multiple-text',{
