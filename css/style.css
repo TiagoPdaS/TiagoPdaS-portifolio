@@ -335,6 +335,27 @@ h2 {
   margin: 1rem 0 2rem;
 }
 
+.social-media2 a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid #4b2c8a;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #4b2c8a;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media2 a:hover {
+  background: #4b2c8a;
+  color: white;
+  box-shadow: 0 0 1rem #4b2c8a;
+}
+
 .portfolio {
   margin: 3rem black;
   display: flex;

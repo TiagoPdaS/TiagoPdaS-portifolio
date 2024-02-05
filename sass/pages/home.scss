@@ -333,6 +333,26 @@ h2 {
   font-size: 1.5rem;
   margin: 1rem 0 2rem;
 }
+
+.social-media2 a {
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid $main-color;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: $main-color;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+.social-media2 a:hover {
+  background: $main-color;
+  color: $bg-white;
+  box-shadow: 0 0 1rem $main-color;
+}
 //END about section
 
 //START portfolio section
