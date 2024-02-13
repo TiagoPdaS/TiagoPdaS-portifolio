@@ -754,10 +754,11 @@ section.contact {
     font-size: 25px;
   }
 
-  .stacks-content {
+  .stacks-content, .pt2 {
     text-align: center;
     align-items: center;
     justify-content: center;
+    grid-template-columns: 1fr;
   }
   .clock,
   .relogio {
@@ -819,12 +820,14 @@ section.contact {
     font-size: 50%;
   }
   .home {
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
 
-  .stacks-content {
+  .stacks-content,.pt2 {
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
