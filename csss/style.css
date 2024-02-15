@@ -1,5 +1,5 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  background: $bg-color;
-  color: $text-color;
+  background: #1f242d;
+  color: #fff;
 }
 
 section {
@@ -30,82 +30,86 @@ section {
   align-items: center;
 }
 
-//header menu section
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   padding: 2rem 9%;
-  background: $bg-dark;
+  background: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
+
 .header.sticky {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   font-size: 2.5rem;
-  color: $text-color;
+  color: #fff;
   font-weight: 600;
   cursor: default;
 }
+
 span {
-  color: $main-color;
-  text-decoration:underline;
+  color: #4b2c8a;
+  text-decoration: underline;
 }
+
 .navbar a {
   font-size: 1.7rem;
-  color: $text-color;
+  color: #fff;
   margin-left: 4rem;
   transition: 0.3s;
 }
-.navbar a:hover, .navbar a.active {
-  color: $main-color;
-}
 
+.navbar a:hover, .navbar a.active {
+  color: #4b2c8a;
+}
 
 #menu-icon {
   font-size: 3.6rem;
-  color: $text-color;
+  color: #fff;
   display: none;
 }
-// END header menu section
 
-//START home section
 .home {
   background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
- //img home
-.home-img img{
-
-  // margin-top: 5%;
-   width: 60vh;
-  // max-width: 450px;
+.home-img img {
+  width: 60vh;
   animation: floatImage 4s ease-in-out infinite;
- }
- @keyframes floatImage {
-   0% { transform: translateY(0px); }
-   50% { transform: translateY(-2.4rem); }
-   100% { transform: translateY(0px); }
- }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .home-content h3 {
-  font-size:3.2rem;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 
 .home-content h3:nth-of-type(2) {
   margin-bottom: 4rem;
 }
+
 span {
-  color: $main-color;
+  color: #4b2c8a;
 }
 
 .home-content h1 {
@@ -117,39 +121,37 @@ span {
 .home-content p {
   font-size: 1.3rem;
   margin-right: 150px;
-  
-
 }
+
 .social-media a {
-  display:inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid $main-color;
+  border: 0.2rem solid #4b2c8a;
   border-radius: 50%;
   font-size: 2rem;
-  color: $main-color;
+  color: #4b2c8a;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
+
 .social-media a:hover {
-  background: $main-color;
-  color: $bg-white;
-  box-shadow: 0 0 1rem $main-color;
+  background: #4b2c8a;
+  color: white;
+  box-shadow: 0 0 1rem #4b2c8a;
 }
-//START LOGO TECHS
+
 .stacks-content {
   display: flex;
   align-items: left;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .stacks-content h3 {
- // color: $secundary-color;
   font-size: 1.15rem;
   display: flex;
 }
@@ -167,6 +169,7 @@ span {
   padding: 5px 10px 5px 0;
   list-style: none;
 }
+
 .stacks ul li img {
   flex-direction: column;
   width: 30px;
@@ -188,16 +191,13 @@ nome de cada item*/
   left: 10px;
   width: 20px;
   height: 20px;
- // color: $secundary-color;
 }
-//END LOGO TECHS
 
-//start clock
 .home .relogio {
   display: flex;
   align-items: center;
   justify-content: left;
-  color: $text-color;
+  color: #fff;
   /* Serve para dar o espaçamento entre os itens. */
   min-height: 0.5rem;
   min-width: 0.5rem;
@@ -223,45 +223,41 @@ nome de cada item*/
 .relogio span {
   font-weight: bolder;
   font-size: 3.75rem;
-  color: $text-color;
+  color: #fff;
 }
 
 .relogio span.tempo {
   font-size: 0.625rem;
-  color: $text-color;
+  color: #fff;
 }
-//END CLOCK
-
 
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: $main-color;
+  background: #4b2c8a;
   border-radius: 4rem;
-  box-shadow: 0 0 1rem $main-color;
+  box-shadow: 0 0 1rem #4b2c8a;
   font-size: 1.6rem;
-  color: $text-color;
+  color: #fff;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
 }
+
 .btn:hover {
   box-shadow: none;
 }
 
-//END home section
-
-//START about section
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15rem;
-  background: $bg-dark;
+  background: black;
 }
+
 .about-img img {
   width: 50vh;
-  //border-radius: 50%;
   margin-left: 50px;
 }
 
@@ -269,10 +265,12 @@ nome de cada item*/
   text-align: left;
   font-size: 6rem;
 }
+
 .about-container h2 {
   text-align: left;
   line-height: 1.2;
 }
+
 .about-container h3 {
   font-size: 4rem;
 }
@@ -281,9 +279,7 @@ nome de cada item*/
   font-size: 2rem;
   margin: 2rem 0 3rem;
 }
-//END about section
 
-//START section techs
 .techs {
   background-image: url(/images/banner-bg.png);
   display: flex;
@@ -291,6 +287,7 @@ nome de cada item*/
   align-items: center;
   flex-wrap: wrap;
 }
+
 h2 {
   margin-bottom: 5rem;
   font-size: 4rem;
@@ -302,97 +299,102 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  
 }
+
 .techs-container .techs-box {
-  
   flex: 1 1 30rem;
- // background: $second-bg-color;
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.4rem solid $bg-color;
+  border: 0.4rem solid #1f242d;
   transition: 0.5s ease;
- 
 }
+
 .techs-container .techs-box:hover {
   transform: scale(1.08);
-  border-color: $main-color;
+  border-color: #4b2c8a;
 }
+
 .techs-box i {
   font-size: 5rem;
-  color: $bg-white;
+  color: white;
 }
+
 .techs-box h3 {
   font-size: 2.5rem;
 }
+
 .techs-box p {
   font-size: 1.5rem;
   margin: 1rem 0 2rem;
 }
 
 .social-media2 a {
-  display:inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid $main-color;
+  border: 0.2rem solid #4b2c8a;
   border-radius: 50%;
   font-size: 2rem;
-  color: $main-color;
+  color: #4b2c8a;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
-.social-media2 a:hover {
-  background: $main-color;
-  color: $bg-white;
-  box-shadow: 0 0 1rem $main-color;
-}
-//END about section
 
-//START portfolio section
+.social-media2 a:hover {
+  background: #4b2c8a;
+  color: white;
+  box-shadow: 0 0 1rem #4b2c8a;
+}
+
 .portfolio {
-  
-  margin: 3rem $bg-dark;
+  margin: 3rem black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: $bg-dark;
+  background: black;
 }
+
 .portfolio h2 {
   margin: 1rem;
   font-size: 5rem;
 }
+
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
+
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem $bg-color;
+  box-shadow: 0 0 1rem #1f242d;
   overflow: hidden;
   display: flex;
 }
+
 .portfolio-box img {
   width: 100%;
   transition: 0.5s ease;
 }
+
 .portfolio-box:hover img {
   transform: scale(1.1);
 }
+
 .portfolio-box .portfolio-layer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), $main-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #4b2c8a);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,34 +404,37 @@ h2 {
   transform: translateY(100%);
   transition: 0.5s ease;
 }
+
 .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
+
 .portfolio-layer h4 {
   font-size: 3rem;
 }
+
 .portfolio-layer p {
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
 }
+
 .portfolio-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: $text-color;
+  background: #fff;
   border-radius: 50%;
 }
+
 .portfolio-layer a i {
   font-size: 2rem;
-  color: $second-bg-color;
+  color: #323946;
 }
 
-//start contact form
 section.contact {
   margin-top: 15px;
-  
   background-image: url(/images/banner-bg.png);
   display: flex;
   justify-content: center;
@@ -437,35 +442,41 @@ section.contact {
   flex-wrap: wrap;
   flex-direction: column;
 }
+
 .contact h2 {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 1rem;
 }
+
 .contact form {
   max-width: 50rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .contact form .input-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: $text-color;
-  background: $second-bg-color;
+  color: #fff;
+  background: #323946;
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
+
 .contact form .input-box input {
   width: 49%;
 }
+
 .contact form textarea {
   resize: none;
 }
@@ -473,42 +484,40 @@ section.contact {
 .contact form .btn {
   margin-top: 1rem;
 }
-//END contact section
 
-//start wih footer
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: $bg-dark;
+  background: black;
 }
 
 .footer-text p {
   font-size: 1.6rem;
-
   text-align: center;
 }
+
 .footer-iconTop a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
-  background-color: $main-color;
+  background-color: #4b2c8a;
   border-radius: 0.8rem;
 }
+
 .footer-iconTop a:hover {
-  box-shadow: 0 0 2rem $main-color;
+  box-shadow: 0 0 2rem #4b2c8a;
 }
+
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: $bg-white;
+  color: white;
   justify-content: center;
   align-items: center;
 }
-
-//========START BREAKPOINTS=========
 
 @media (max-width: 1200px) {
   html {
@@ -518,11 +527,10 @@ section.contact {
     text-align: center;
     justify-content: center;
     align-items: center;
-   }
+  }
   .about h2 {
     text-align: center;
   }
- 
 }
 @media (max-width: 991px) {
   #menu-icon {
@@ -535,7 +543,6 @@ section.contact {
     margin-top: 5rem;
     text-align: center;
     justify-content: center;
-    
   }
   .navbar {
     position: absolute;
@@ -543,7 +550,7 @@ section.contact {
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: $bg-dark;
+    background: black;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
@@ -551,13 +558,11 @@ section.contact {
   .navbar.active {
     display: block;
   }
-
   .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
   }
-
   .home {
     flex-direction: column;
   }
@@ -573,24 +578,22 @@ section.contact {
     align-items: center;
     text-align: center;
     margin: 0;
-   
   }
   .home-img img {
     width: 60vw;
     margin-top: 4rem;
-  }  
+  }
   .stacks-content {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  .clock, .relogio{
+  .clock, .relogio {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-
   .about {
     display: flex;
     text-align: center;
@@ -601,21 +604,18 @@ section.contact {
   .about h2 {
     text-align: center;
   }
-   
   .techs {
     padding-bottom: 7rem;
   }
-
   .portfolio {
     padding-bottom: 7rem;
   }
-  .contact{
+  .contact {
     min-height: auto;
   }
-
   .footer {
     padding: 2rem 3%;
-    background: $bg-dark;
+    background: black;
   }
 }
 @media (max-width: 768px) {
@@ -634,7 +634,7 @@ section.contact {
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: $bg-dark;
+    background: black;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
@@ -642,13 +642,11 @@ section.contact {
   .navbar.active {
     display: block;
   }
-
   .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
   }
-
   .home {
     flex-direction: column;
   }
@@ -665,14 +663,10 @@ section.contact {
     text-align: center;
     margin: 0;
   }
-
   .home-img img {
     width: 50vw;
     margin-top: 4rem;
-
   }
-
-  
   .about {
     flex-direction: column-reverse;
     display: flex;
@@ -692,20 +686,16 @@ section.contact {
     margin-bottom: 3rm;
     font-size: 4rem;
   }
-
   .portfolio h2 {
     margin-bottom: 3rem;
   }
-
-  
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer{
-  background: $bg-dark;
+  .footer {
+    background: black;
+  }
 }
-}
-
 @media (max-width: 620px) {
   .social-media {
     margin: 0 25% 0 25%;
@@ -718,23 +708,20 @@ section.contact {
   .home span {
     font-size: 25px;
   }
- 
   .stacks-content {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  .clock, .relogio{
+  .clock, .relogio {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  
- .home-img {
+  .home-img {
     text-align: center;
   }
- 
   .about {
     display: flex;
     text-align: center;
@@ -755,14 +742,14 @@ section.contact {
   .portfolio-container {
     grid-template-columns: 1fr;
   }
-  .contact form .input-box input{
+  .contact form .input-box input {
     width: 100%;
   }
-  .footer{
+  .footer {
     flex-direction: column-reverse;
-    background: $bg-dark;
+    background: black;
   }
-  .footer p{
+  .footer p {
     text-align: center;
     margin-top: 2rem;
   }
@@ -772,9 +759,8 @@ section.contact {
     justify-content: center;
   }
 }
-
-@media (max-width: 450px){
-  html{
+@media (max-width: 450px) {
+  html {
     font-size: 50%;
   }
   .home {
@@ -782,20 +768,20 @@ section.contact {
     justify-content: center;
     align-items: center;
   }
- 
   .stacks-content {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  .clock, .relogio{
+  .clock, .relogio {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  
-  .contact form .input-box input{
+  .contact form .input-box input {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
