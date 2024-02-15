@@ -172,7 +172,7 @@ span {
 
 .stacks ul li img {
   flex-direction: column;
-  width: 30px;
+  width: 45px;
   height: auto;
   transition: transform 0.5s ease;
 }
@@ -288,12 +288,6 @@ nome de cada item*/
   flex-wrap: wrap;
 }
 
-.techs img {
-  width: 100%;
-  height: auto;
-  padding: 0;
-}
-
 h2 {
   margin-bottom: 5rem;
   font-size: 4rem;
@@ -308,6 +302,7 @@ h2 {
 }
 
 .techs-container .techs-box {
+  height: 250px;
   flex: 1 1 30rem;
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
@@ -328,6 +323,8 @@ h2 {
 
 .techs-box h3 {
   font-size: 2.5rem;
+  text-align: left;
+  padding-bottom: 35px;
 }
 
 .techs-box p {
@@ -733,7 +730,7 @@ section.contact {
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 15rem;
+    gap: 1rem;
   }
   .about h2 {
     text-align: center;
@@ -784,6 +781,13 @@ section.contact {
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .about {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
   .contact form .input-box input {
     width: 100%;

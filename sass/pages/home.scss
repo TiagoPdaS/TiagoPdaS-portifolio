@@ -169,7 +169,7 @@ span {
 }
 .stacks ul li img {
   flex-direction: column;
-  width: 30px;
+  width: 45px;
   height: auto;
   transition: transform 0.5s ease;
 }
@@ -305,7 +305,7 @@ h2 {
   
 }
 .techs-container .techs-box {
-  
+  height: 250px;
   flex: 1 1 30rem;
  // background: $second-bg-color;
   padding: 3rem 2rem 4rem;
@@ -325,6 +325,8 @@ h2 {
 }
 .techs-box h3 {
   font-size: 2.5rem;
+  text-align: left;
+  padding-bottom: 35px;
 }
 .techs-box p {
   font-size: 1.5rem;
@@ -740,7 +742,7 @@ section.contact {
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 15rem;
+    gap: 1rem;
   }
   .about h2 {
     text-align: center;
@@ -793,6 +795,13 @@ section.contact {
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .about{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
   
   .contact form .input-box input{
