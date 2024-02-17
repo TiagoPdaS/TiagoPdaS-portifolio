@@ -311,7 +311,7 @@ h2 {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.4rem solid $bg-color;
+  border: 0.4rem solid $bg-white;
   transition: 0.5s ease;
 }
 .techs-container .techs-box:hover {
@@ -724,7 +724,6 @@ section.contact {
     margin-top: 0.1rem;
   }
 
- 
   .techs h2 {
     margin-bottom: 3rm;
     font-size: 4rem;
@@ -788,23 +787,20 @@ section.contact {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
-   
   }
-  
+
   .techs-box {
     width: 100%;
-  padding-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .techs-box h3 {
     text-align: center;
   }
 
-.stacks1{
-  padding: -25px;
- 
-}
+  .stacks1 {
+    padding: -25px;
+  }
   .stacks1 ul {
     list-style-type: none;
     padding: 0px;
@@ -812,10 +808,7 @@ section.contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
   }
-
-  
 
   .portfolio .heading {
     display: flex;
@@ -846,69 +839,37 @@ section.contact {
 }
 
 @media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-  .home {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  .techs-box {
+    background-color: red;
+    height: auto !important; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    text-align: center; 
   }
 
-  .stacks-content {
-    text-align: center;
+  .stacks1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+  }
+
+  .stacks1 li {
+    flex: 1 0 calc(50% - 20px); 
+    box-sizing: border-box;
+    display: flex; 
     justify-content: center;
   }
-  .clock,
-  .relogio {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .about {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+
+  .stacks1 img {
+    max-width: 100%;
+    height: auto;
+
   }
  
-  .techs-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-   
-  }
-  
-  .techs-box {
-    width: 100%;
-    
-  }
-
-  .techs-box h3 {
-    text-align: center;
-  }
-
-  .stacks1{
-    
-    padding:-25px;  
-  }
-
-  
-  .stacks1 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-  }
-
 
   .contact form .input-box input {
     width: 100%;

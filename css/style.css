@@ -308,7 +308,7 @@ h2 {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.4rem solid #1f242d;
+  border: 0.4rem solid white;
   transition: 0.5s ease;
 }
 
@@ -828,55 +828,31 @@ section.contact {
   }
 }
 @media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-  .home {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .stacks-content {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .clock,
-  .relogio {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .about {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  .techs-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
   .techs-box {
-    width: 100%;
-  }
-  .techs-box h3 {
+    background-color: red;
+    height: auto !important;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
   }
   .stacks1 {
-    padding: -25px;
-  }
-  .stacks1 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .stacks1 li {
+    flex: 1 0 calc(50% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+  .stacks1 img {
+    max-width: 100%;
+    height: auto;
   }
   .contact form .input-box input {
     width: 100%;
