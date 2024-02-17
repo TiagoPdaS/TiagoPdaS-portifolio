@@ -791,7 +791,7 @@ section.contact {
   }
   .stacks1 ul {
     list-style-type: none;
-    padding: 10px;
+    padding: 0px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
