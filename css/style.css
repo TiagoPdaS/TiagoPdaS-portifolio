@@ -784,13 +784,14 @@ section.contact {
   }
   .techs-box {
     width: 100%;
+    padding-bottom: 50px;
   }
   .techs-box h3 {
     text-align: center;
   }
   .stacks1 ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
