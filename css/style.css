@@ -855,6 +855,9 @@ section.contact {
     align-items: center;
     gap: 1rem;
   }
+  .techs {
+    background: black;
+  }
   .techs-box {
     height: auto !important;
     padding: 10px;

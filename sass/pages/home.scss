@@ -868,6 +868,10 @@ section.contact {
     gap: 1rem;
   }
 
+  .techs{
+  background: $bg-dark;
+  }
+
   .techs-box {
    
     height: auto !important; 
@@ -876,6 +880,7 @@ section.contact {
     justify-content: center; 
     flex-wrap: wrap; 
     text-align: center; 
+   
   }
 
   .stacks1 {
