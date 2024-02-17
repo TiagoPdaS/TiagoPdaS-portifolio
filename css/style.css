@@ -789,6 +789,9 @@ section.contact {
   .techs-box h3 {
     text-align: center;
   }
+  .stacks1 {
+    padding: -25px;
+  }
   .stacks1 ul {
     list-style-type: none;
     padding: 0px;
@@ -865,8 +868,7 @@ section.contact {
     text-align: center;
   }
   .stacks1 {
-    margin: 25px;
-    padding: 25px;
+    padding: -25px;
   }
   .stacks1 ul {
     list-style-type: none;
