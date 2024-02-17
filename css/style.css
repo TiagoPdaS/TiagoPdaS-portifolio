@@ -282,7 +282,7 @@ nome de cada item*/
 }
 
 .techs {
-  background: black;
+  background-image: url("/images/banner-bg.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,7 +477,7 @@ h2 {
 
 section.contact {
   margin-top: 15px;
-  background-image: url(/images/banner-bg.png);
+  background-image: url("/images/banner-bg.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -854,6 +854,9 @@ section.contact {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+  .techs {
+    background-size: cover;
   }
   .techs-box {
     height: auto !important;

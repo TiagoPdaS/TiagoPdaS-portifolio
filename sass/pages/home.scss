@@ -286,8 +286,7 @@ nome de cada item*/
 
 //START section techs
 .techs {
-  background:  black;
- 
+  background-image: url("/images/banner-bg.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,7 +469,7 @@ h2 {
 section.contact {
   margin-top: 15px;
 
-  background-image: url(/images/banner-bg.png);
+  background-image: url("/images/banner-bg.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -869,15 +868,17 @@ section.contact {
     gap: 1rem;
   }
 
+  .techs {
+    background-size: cover;
+  }
 
   .techs-box {
-   
-    height: auto !important; 
-    padding: 10px; 
-    display: flex; 
-    justify-content: center; 
-    flex-wrap: wrap; 
-    text-align: center; 
+    height: auto !important;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
    
   }
 
@@ -887,19 +888,19 @@ section.contact {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    
   }
 
   .stacks1 li {
-    flex: 1 0 calc(50% - 20px); 
+    flex: 1 0 calc(50% - 20px);
     box-sizing: border-box;
-    display: flex; 
+    display: flex;
     justify-content: center;
   }
 
   .stacks1 img {
     max-width: 100%;
     height: auto;
-
   }
 
   .contact form .input-box input {
