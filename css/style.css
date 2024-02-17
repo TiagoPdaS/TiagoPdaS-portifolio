@@ -66,7 +66,8 @@ span {
   transition: 0.3s;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
   color: #4b2c8a;
 }
 
@@ -332,6 +333,44 @@ h2 {
   margin: 1rem 0 2rem;
 }
 
+.stacks1 {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stacks1-content h3 {
+  font-size: 1.15rem;
+  display: flex;
+}
+
+.stacks1 ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.stacks1 ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5px 10px 5px 0;
+  list-style: none;
+}
+
+.stacks1 ul li img {
+  flex-direction: column;
+  width: 50px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.stacks1 ul li div img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
 .social-media2 a {
   display: inline-flex;
   justify-content: center;
@@ -591,7 +630,8 @@ section.contact {
     align-items: center;
     justify-content: center;
   }
-  .clock, .relogio {
+  .clock,
+  .relogio {
     display: flex;
     text-align: center;
     align-items: center;
@@ -685,6 +725,9 @@ section.contact {
     width: 70vw;
     margin-top: 0.1rem;
   }
+  .techs-container {
+    padding: 50px;
+  }
   .techs h2 {
     margin-bottom: 3rm;
     font-size: 4rem;
@@ -715,9 +758,9 @@ section.contact {
     text-align: center;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
   }
-  .clock, .relogio {
+  .clock,
+  .relogio {
     display: flex;
     text-align: center;
     align-items: center;
@@ -735,6 +778,26 @@ section.contact {
   }
   .about h2 {
     text-align: center;
+  }
+  .techs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .techs-box {
+    width: 100%;
+  }
+  .techs-box h3 {
+    text-align: center;
+  }
+  .stacks1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .portfolio .heading {
     display: flex;
@@ -776,9 +839,9 @@ section.contact {
     text-align: center;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
   }
-  .clock, .relogio {
+  .clock,
+  .relogio {
     display: flex;
     text-align: center;
     align-items: center;
@@ -790,6 +853,26 @@ section.contact {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+  .techs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .techs-box {
+    width: 100%;
+  }
+  .techs-box h3 {
+    text-align: center;
+  }
+  .stacks1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .contact form .input-box input {
     width: 100%;
