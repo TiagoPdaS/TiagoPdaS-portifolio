@@ -281,14 +281,14 @@ nome de cada item*/
 }
 .about-container h3 {
   font-size: 4rem;
-  text-decoration: underline 8px $bg-color;
+  text-decoration: underline 1px $bg-white;
 }
 
 .about-container p {
   font-size: 2rem;
   margin: 2rem 0 3rem;
   padding: 2rem;
-  border: 0.4rem solid $bg-color;
+  border: 0.4rem solid $bg-white;
   border-radius: 2rem;
 }
 
@@ -593,6 +593,10 @@ section.contact {
   }
 }
 @media (max-width: 991px) {
+  body {
+    margin: 10px;
+  }
+
   #menu-icon {
     display: block;
   }
@@ -686,6 +690,10 @@ section.contact {
   }
 }
 @media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+
   #menu-icon {
     display: block;
   }
@@ -772,6 +780,10 @@ section.contact {
 }
 
 @media (max-width: 620px) {
+
+  body {
+    margin: 10px;
+  }
   .social-media {
     margin: 0 25% 0 25%;
   }
@@ -872,6 +884,10 @@ section.contact {
   html {
     font-size: 50%;
   }
+  body {
+    margin: 10px;
+  }
+
   .home {
     text-align: center;
     justify-content: center;
@@ -936,4 +952,11 @@ section.contact {
   .contact form .input-box input {
     width: 100%;
   }
+}
+
+@media (max-width: 350px){
+ body{
+max-width: 325px;
+  margin: 10px;
+}
 }
