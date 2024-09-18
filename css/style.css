@@ -17,6 +17,8 @@ html {
 }
 
 body {
+  margin: 10px;
+  padding: 10px;
   background: #1f242d;
   color: #fff;
 }
@@ -867,6 +869,7 @@ section.contact {
   }
   body {
     margin: 10px;
+    padding: 10px;
   }
   .home {
     text-align: center;
