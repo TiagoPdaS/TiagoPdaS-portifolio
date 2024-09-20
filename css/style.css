@@ -696,6 +696,10 @@ section.contact {
 }
 @media (max-width: 768px) {
   body {
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 15px; /* Para evitar que o conteúdo grude nas bordas */
+    overflow-x: hidden; /* Impede o scroll horizontal */
     margin: 10px;
   }
   #menu-icon {
@@ -776,9 +780,6 @@ section.contact {
   }
 }
 @media (max-width: 617px) {
-  body {
-    margin: 10px;
-  }
   .social-media {
     margin: 0 25% 0 25%;
   }
@@ -869,10 +870,6 @@ section.contact {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-  }
-  body {
-    margin: 10px;
-    padding: 10px;
   }
   .home {
     text-align: center;
