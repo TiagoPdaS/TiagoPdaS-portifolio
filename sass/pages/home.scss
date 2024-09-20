@@ -13,13 +13,14 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+ 
 
   position: relative;
 }
 
-body {
-
+body { 
+  overflow-x: hidden;
+ 
   background: $bg-color;
   color: $text-color;
 }
@@ -105,6 +106,13 @@ span {
     transform: translateY(0px);
   }
 }
+
+.home-content {
+  width: 100%; /* Garantir que a largura não ultrapasse 100% */
+  box-sizing: border-box; /* Incluir padding e border no cálculo da largura */
+  padding: 0 1rem; /* Adicionar algum padding para evitar que o conteúdo fique muito próximo das bordas */
+}
+
 .home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
@@ -151,9 +159,9 @@ span {
 }
 //START LOGO TECHS
 .stacks-content {
- 
+
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -590,10 +598,7 @@ section.contact {
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
-    overflow-x: hidden;
-
-  position: relative;
-}
+    
   }
   .about {
     text-align: center;
