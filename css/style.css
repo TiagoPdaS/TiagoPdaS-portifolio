@@ -14,11 +14,10 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  position: relative;
 }
 
 body {
-  margin: 10px;
-  padding: 10px;
   background: #1f242d;
   color: #fff;
 }
@@ -82,8 +81,6 @@ span {
 .home {
   background-image: url(/images/banner-bg.png);
   display: flex;
-  margin: 10px;
-  padding: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -124,8 +121,9 @@ span {
 }
 
 .home-content p {
+  justify-content: center;
+  align-items: center;
   font-size: 1.3rem;
-  margin-right: 150px;
 }
 
 .social-media a {
