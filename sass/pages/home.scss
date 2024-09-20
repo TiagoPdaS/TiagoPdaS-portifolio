@@ -590,6 +590,10 @@ section.contact {
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
+    overflow-x: hidden;
+
+  position: relative;
+}
   }
   .about {
     text-align: center;
@@ -754,7 +758,8 @@ section.contact {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin: 20px;
+    padding: 20px;
   }
 
   .home-img img {
