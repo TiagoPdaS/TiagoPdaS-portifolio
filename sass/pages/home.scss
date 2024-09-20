@@ -9,6 +9,8 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
@@ -19,8 +21,9 @@ html {
 }
 
 body { 
-  overflow-x: hidden;
- 
+  
+ margin: 0;
+ padding: 0;
   background: $bg-color;
   color: $text-color;
 }
@@ -158,6 +161,12 @@ span {
   box-shadow: 0 0 1rem $main-color;
 }
 //START LOGO TECHS
+
+.stacks{
+  width: 100%; /* Garantir que a largura não ultrapasse 100% */
+  box-sizing: border-box; /* Incluir padding e border no cálculo da largura */
+  padding: 0 ;
+}
 .stacks-content {
 
   display: flex;
@@ -324,6 +333,7 @@ h2 {
 }
 
 .techs{
+  
   display: flex;
   flex-direction: column;
   justify-content: center;

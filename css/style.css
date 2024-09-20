@@ -9,6 +9,8 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
@@ -17,7 +19,8 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
   background: #1f242d;
   color: #fff;
 }
@@ -151,6 +154,12 @@ span {
   background: #4b2c8a;
   color: white;
   box-shadow: 0 0 1rem #4b2c8a;
+}
+
+.stacks {
+  width: 100%; /* Garantir que a largura não ultrapasse 100% */
+  box-sizing: border-box; /* Incluir padding e border no cálculo da largura */
+  padding: 0;
 }
 
 .stacks-content {
