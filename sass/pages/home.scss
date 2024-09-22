@@ -55,7 +55,7 @@ section {
 }
 
 span {
-  color: #4b2c8a;
+  color:$main-color;
   text-decoration: underline;
 }
 
@@ -73,7 +73,7 @@ span {
 
 #menu-icon {
   font-size: 3.6rem;
-  color: #fff;
+  color: $bg-white;
   display: none;
 }
 
@@ -111,7 +111,7 @@ span {
 }
 
 span {
-  color: #4b2c8a;
+  color: $main-color;
 }
 
 .home-content h1 {
@@ -132,7 +132,7 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid #4b2c8a;
+  border: 0.2rem solid $main-color;
   border-radius: 50%;
   font-size: 2rem;
   color: #4b2c8a;
@@ -141,9 +141,9 @@ span {
 }
 
 .social-media a:hover {
-  background: #4b2c8a;
+  background: $main-color;
   color: white;
-  box-shadow: 0 0 1rem #4b2c8a;
+  box-shadow: 0 0 1rem $main-color;
 }
 /*
 .stacks-content {
