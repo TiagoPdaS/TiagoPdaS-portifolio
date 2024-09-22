@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: #1f242d;
+  background: black;
   color: #fff;
 }
 
@@ -644,7 +644,8 @@ section.contact {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin: 30px;
+    padding: 30px;
   }
   .home-img img {
     width: 60vw;
@@ -725,11 +726,12 @@ section.contact {
     font-size: 5rem;
   }
   .home-content p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin: 30px;
+    padding: 30px;
   }
   .home-img img {
     width: 50vw;
@@ -879,6 +881,12 @@ section.contact {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+  .home-content {
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .techs {
     background-size: cover;

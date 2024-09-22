@@ -53,7 +53,7 @@ ScrollReveal().reveal('.home-content p, .about-content, .about-container h3, .ab
 
 /* =============typed js======================*/
 const typed = new Typed('.multiple-text',{
-    strings: ['FrontEnd', 'Developer', 'FRONTEND DEVELOPER'],
+    strings: ['Front-End', 'Developer', 'FRONT-END DEVELOPER'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
