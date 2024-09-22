@@ -1,5 +1,5 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +17,8 @@ html {
 }
 
 body {
-  background: $bg-dark;
-  color: $text-color;
-
+  background: $bg-color;
+  color: #fff;
 }
 
 section {
@@ -31,14 +30,13 @@ section {
   align-items: center;
 }
 
-//header menu section
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: $bg-dark;
+  background: $bg-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +55,7 @@ section {
 }
 
 span {
-  color: $main-color;
+  color: #4b2c8a;
   text-decoration: underline;
 }
 
@@ -75,13 +73,10 @@ span {
 
 #menu-icon {
   font-size: 3.6rem;
-  color: $text-color;
+  color: #fff;
   display: none;
 }
 
-// END header menu section
-
-//START home section
 .home {
   background-image: url(/images/banner-bg.png);
   display: flex;
@@ -89,29 +84,22 @@ span {
   align-items: center;
 }
 
-//img home
 .home-img img {
-  // margin-top: 5%;
   width: 60vh;
-  // max-width: 450px;
   animation: floatImage 4s ease-in-out infinite;
-  
 }
 
 @keyframes floatImage {
   0% {
     transform: translateY(0px);
   }
-
   50% {
     transform: translateY(-2.4rem);
   }
-
   100% {
     transform: translateY(0px);
   }
 }
-
 .home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
@@ -122,7 +110,7 @@ span {
 }
 
 span {
-  color: $main-color;
+  color: #4b2c8a;
 }
 
 .home-content h1 {
@@ -143,21 +131,20 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid $main-color;
+  border: 0.2rem solid #4b2c8a;
   border-radius: 50%;
   font-size: 2rem;
-  color: $main-color;
+  color: #4b2c8a;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media a:hover {
-  background: $main-color;
-  color: $bg-white;
-  box-shadow: 0 0 1rem $main-color;
+  background: #4b2c8a;
+  color: white;
+  box-shadow: 0 0 1rem #4b2c8a;
 }
-
-//START LOGO TECHS
+/*
 .stacks-content {
   display: flex;
   align-items: left;
@@ -166,7 +153,6 @@ span {
 }
 
 .stacks-content h3 {
-  // color: $secundary-color;
   font-size: 1.15rem;
   display: flex;
 }
@@ -196,6 +182,7 @@ span {
   transform: scale(1.3);
   cursor: pointer;
 }
+*/
 
 /*estilização para qunaod passar o mouse emcima do icone, aparecer o 
 nome de cada item*/
@@ -206,17 +193,13 @@ nome de cada item*/
   left: 10px;
   width: 20px;
   height: 20px;
-  // color: $secundary-color;
 }
 
-//END LOGO TECHS
-
-//start clock
 .home .relogio {
   display: flex;
   align-items: center;
   justify-content: left;
-  color: $text-color;
+  color: #fff;
   /* Serve para dar o espaçamento entre os itens. */
   min-height: 0.5rem;
   min-width: 0.5rem;
@@ -242,7 +225,7 @@ nome de cada item*/
 .relogio span {
   font-weight: bolder;
   font-size: 3.75rem;
-  color: $text-color;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -252,19 +235,17 @@ nome de cada item*/
 
 .relogio span.time {
   font-size: 0.625rem;
-  color: $text-color;
+  color: #fff;
 }
-
-//END CLOCK
 
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: $main-color;
+  background: #4b2c8a;
   border-radius: 4rem;
-  box-shadow: 0 0 1rem $main-color;
+  box-shadow: 0 0 1rem #4b2c8a;
   font-size: 1.6rem;
-  color: $text-color;
+  color: #fff;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
@@ -274,20 +255,16 @@ nome de cada item*/
   box-shadow: none;
 }
 
-//END home section
-
-//START about section
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15rem;
-  background: $bg-dark;
+  background: black;
 }
 
 .about-img img {
   width: 50vh;
-  //border-radius: 50%;
   margin-left: 50px;
 }
 
@@ -303,20 +280,17 @@ nome de cada item*/
 
 .about-container h3 {
   font-size: 4rem;
-  text-decoration: underline 8px $bg-color;
+  text-decoration: underline 8px #1f242d;
 }
 
 .about-container p {
   font-size: 2rem;
   margin: 2rem 0 3rem;
   padding: 2rem;
-  border: 0.4rem solid $bg-color;
+  border: 0.4rem solid #1f242d;
   border-radius: 2rem;
 }
 
-//END about section
-
-//START section techs
 .techs {
   background-image: url("/images/banner-bg.png");
   display: flex;
@@ -348,24 +322,21 @@ h2 {
 
 .techs-container .techs-box {
   height: 250px;
-
-  // background: $second-bg-color;
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
-
   text-align: center;
-  border: 1.5rem solid $bg-color;
+  border: 1.5rem solid #1f242d;
   transition: 0.5s ease;
 }
 
 .techs-container .techs-box:hover {
   transform: scale(1.25);
-  border-color: $main-color;
+  border-color: #4b2c8a;
 }
 
 .techs-box i {
   font-size: 5rem;
-  color: $bg-white;
+  color: white;
 }
 
 .techs-box h3 {
@@ -379,7 +350,6 @@ h2 {
   margin: 1rem 0 2rem;
 }
 
-//logo techs
 .stacks1 {
   display: flex;
   align-items: left;
@@ -388,7 +358,6 @@ h2 {
 }
 
 .stacks1-content h3 {
-  // color: $secundary-color;
   font-size: 1.15rem;
   display: flex;
 }
@@ -414,10 +383,9 @@ h2 {
   transition: transform 0.5s ease;
 }
 
-.stacks1 ul li .img-tech{
+.stacks1 ul li .img-tech {
   width: 200px;
   transform: scale(3);
-
 }
 
 .stacks1 ul li div img:hover {
@@ -432,10 +400,8 @@ h2 {
   left: 10px;
   width: 20px;
   height: 20px;
-  // color: $secundary-color;
 }
 
-//end logo techs
 .social-media2 a {
   display: inline-flex;
   justify-content: center;
@@ -443,30 +409,27 @@ h2 {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid $main-color;
+  border: 0.2rem solid #4b2c8a;
   border-radius: 50%;
   font-size: 2rem;
-  color: $main-color;
+  color: #4b2c8a;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media2 a:hover {
-  background: $main-color;
-  color: $bg-white;
-  box-shadow: 0 0 1rem $main-color;
+  background: #4b2c8a;
+  color: white;
+  box-shadow: 0 0 1rem #4b2c8a;
 }
 
-//END about section
-
-//START portfolio section
 .portfolio {
-  margin: 3rem $bg-dark;
+  margin: 3rem black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: $bg-dark;
+  background: black;
 }
 
 .portfolio h2 {
@@ -484,7 +447,7 @@ h2 {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem $bg-color;
+  box-shadow: 0 0 1rem #1f242d;
   overflow: hidden;
   display: flex;
 }
@@ -504,7 +467,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), $main-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #4b2c8a);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,19 +497,17 @@ h2 {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: $text-color;
+  background: #fff;
   border-radius: 50%;
 }
 
 .portfolio-layer a i {
   font-size: 2rem;
-  color: $second-bg-color;
+  color: #323946;
 }
 
-//start contact form
 section.contact {
   margin-top: 15px;
-
   background-image: url("/images/banner-bg.png");
   display: flex;
   justify-content: center;
@@ -579,8 +540,8 @@ section.contact {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: $text-color;
-  background: $second-bg-color;
+  color: #fff;
+  background: #323946;
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
@@ -597,21 +558,17 @@ section.contact {
   margin-top: 1rem;
 }
 
-//END contact section
-
-//start wih footer
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: $bg-dark;
+  background: black;
 }
 
 .footer-text p {
   font-size: 1.6rem;
-
   text-align: center;
 }
 
@@ -620,88 +577,74 @@ section.contact {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
-  background-color: $main-color;
+  background-color: #4b2c8a;
   border-radius: 0.8rem;
 }
 
 .footer-iconTop a:hover {
-  box-shadow: 0 0 2rem $main-color;
+  box-shadow: 0 0 2rem #4b2c8a;
 }
 
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: $bg-white;
+  color: white;
   justify-content: center;
   align-items: center;
 }
-
-//========START BREAKPOINTS=========
 
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
   }
-
   .about {
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-
   .about h2 {
     text-align: center;
   }
 }
-
 @media (max-width: 991px) {
   #menu-icon {
     display: block;
   }
-
   .header {
     padding: 2rem 10%;
   }
-
   .home {
     margin-top: 5rem;
     text-align: center;
     justify-content: center;
   }
-
   .navbar {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: $bg-dark;
+    background: black;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
   }
-
   .navbar.active {
     display: block;
   }
-
   .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
   }
-
   .home {
     flex-direction: column;
   }
-
   .home-content h3 {
     font-size: 2.5rem;
   }
-
   .home-content h1 {
     font-size: 5rem;
   }
-
   .home-content p {
     font-size: 2rem;
     justify-content: center;
@@ -710,19 +653,15 @@ section.contact {
     margin: 30px;
     padding: 30px;
   }
-
   .home-img img {
     width: 60vw;
     margin-top: 4rem;
   }
-
   .stacks-content {
     text-align: center;
     align-items: center;
     justify-content: center;
-
   }
-
   .clock,
   .relogio {
     display: flex;
@@ -730,7 +669,6 @@ section.contact {
     align-items: center;
     justify-content: center;
   }
-
   .about {
     display: flex;
     text-align: center;
@@ -738,76 +676,61 @@ section.contact {
     align-items: center;
     gap: 15rem;
   }
-
   .about h2 {
     text-align: center;
   }
-
   .techs {
     padding-bottom: 7rem;
   }
-
-
   .portfolio {
     padding-bottom: 7rem;
   }
-
   .contact {
     min-height: auto;
   }
-
   .footer {
     padding: 2rem 3%;
-    background: $bg-dark;
+    background: black;
   }
 }
-
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
   }
-
   .home {
     margin-top: 5rem;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-
   .navbar {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: $bg-dark;
+    background: black;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
   }
-
   .navbar.active {
     display: block;
   }
-
   .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
   }
-
   .home {
     flex-direction: column;
   }
-
   .home-content h3 {
     font-size: 2.5rem;
   }
-
   .home-content h1 {
     font-size: 5rem;
   }
-
   .home-content p {
     font-size: 1.5rem;
     justify-content: center;
@@ -816,12 +739,10 @@ section.contact {
     margin: 30px;
     padding: 30px;
   }
-
   .home-img img {
     width: 50vw;
     margin-top: 4rem;
   }
-
   .about {
     flex-direction: column-reverse;
     display: flex;
@@ -830,64 +751,41 @@ section.contact {
     align-items: center;
     gap: 15rem;
   }
-
   .about h2 {
     text-align: center;
   }
-
   .about img {
     width: 70vw;
     margin-top: 0.1rem;
   }
-
   .techs h2 {
     margin-bottom: 3rm;
     font-size: 4rem;
   }
-
   .portfolio h2 {
     margin-bottom: 3rem;
   }
-
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .footer {
-    background: $bg-dark;
+    background: black;
   }
 }
-
 @media (max-width: 620px) {
   .social-media {
     margin: 0 25% 0 25%;
   }
-
   .home {
-    margin: 20px;
-    padding: 20px;
+    margin-top: 5rem;
+    padding: 90px 0 0 0;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-
   .home span {
     font-size: 25px;
   }
-
-  
-  
-  .stacks-content {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-
- 
-
-
-
   .clock,
   .relogio {
     display: flex;
@@ -895,11 +793,9 @@ section.contact {
     align-items: center;
     justify-content: center;
   }
-
   .home-img {
     text-align: center;
   }
-
   .about {
     display: flex;
     text-align: center;
@@ -907,31 +803,25 @@ section.contact {
     align-items: center;
     gap: 1rem;
   }
-
   .about h2 {
     text-align: center;
   }
-
   .techs-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-
   .techs-box {
     width: 100%;
     padding-bottom: 50px;
   }
-
   .techs-box h3 {
     text-align: center;
   }
-
   .stacks1 {
     padding: -25px;
   }
-
   .stacks1 ul {
     list-style-type: none;
     padding: 0px;
@@ -940,7 +830,6 @@ section.contact {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .portfolio .heading {
     display: flex;
     text-align: center;
@@ -948,37 +837,30 @@ section.contact {
     align-items: center;
     font-size: 3.8rem;
   }
-
   .portfolio-container {
     grid-template-columns: 1fr;
   }
-
   .contact form .input-box input {
     width: 100%;
   }
-
   .footer {
     flex-direction: column-reverse;
-    background: $bg-dark;
+    background: black;
   }
-
   .footer p {
     text-align: center;
     margin-top: 2rem;
   }
-
   .footer-iconTop {
     align-items: center;
     text-align: center;
     justify-content: center;
   }
 }
-
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
-
   .home {
     margin: 20px;
     padding: 20px;
@@ -986,15 +868,11 @@ section.contact {
     justify-content: center;
     align-items: center;
   }
-
-  
-
-  .stacks-content{
+  .stacks-content {
     text-align: center;
     align-items: center;
     justify-content: center;
-    }
-
+  }
   .clock,
   .relogio {
     display: flex;
@@ -1002,7 +880,6 @@ section.contact {
     align-items: center;
     justify-content: center;
   }
-
   .about {
     display: flex;
     text-align: center;
@@ -1010,20 +887,16 @@ section.contact {
     align-items: center;
     gap: 1rem;
   }
-
   .home-content {
     margin-top: 80px;
     font-size: 1.3rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-
   }
-
   .techs {
     background-size: cover;
   }
-
   .techs-box {
     height: auto !important;
     padding: 10px;
@@ -1031,31 +904,27 @@ section.contact {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-
   }
-
   .stacks1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-
   }
-
   .stacks1 li {
     flex: 1 0 calc(50% - 20px);
     box-sizing: border-box;
     display: flex;
     justify-content: center;
   }
-
   .stacks1 img {
     max-width: 100%;
     height: auto;
   }
-
   .contact form .input-box input {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
