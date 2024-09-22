@@ -19,6 +19,7 @@ html {
 body {
   background: $bg-dark;
   color: $text-color;
+
 }
 
 section {
@@ -94,8 +95,13 @@ span {
   width: 60vh;
   // max-width: 450px;
   animation: floatImage 4s ease-in-out infinite;
+  
 }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 @keyframes floatImage {
   0% {
     transform: translateY(0px);
@@ -321,7 +327,11 @@ nome de cada item*/
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+<<<<<<< Updated upstream
 }
+=======
+}  
+>>>>>>> Stashed changes
 
 h2 {
   margin-bottom: 5rem;
@@ -410,6 +420,12 @@ h2 {
   width: 50px;
   height: auto;
   transition: transform 0.5s ease;
+}
+
+.stacks1 ul li .img-tech{
+  width: 200px;
+  transform: scale(3);
+
 }
 
 .stacks1 ul li div img:hover {
@@ -687,7 +703,7 @@ section.contact {
   }
 
   .home-content h3 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .home-content h1 {
@@ -738,6 +754,7 @@ section.contact {
   .techs {
     padding-bottom: 7rem;
   }
+
 
   .portfolio {
     padding-bottom: 7rem;
@@ -855,6 +872,8 @@ section.contact {
   }
 
   .home {
+    margin: 20px;
+    padding: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -962,6 +981,8 @@ section.contact {
   }
 
   .home {
+    margin: 20px;
+    padding: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -1004,6 +1025,7 @@ section.contact {
   }
 
   .techs-box {
+<<<<<<< Updated upstream
     height: auto !important;
     padding: 10px;
     display: flex;
@@ -1011,6 +1033,12 @@ section.contact {
     flex-wrap: wrap;
     text-align: center;
 
+=======
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de igual largura */
+    gap: 10px;
+>>>>>>> Stashed changes
   }
 
   .stacks1 {
