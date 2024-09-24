@@ -772,7 +772,7 @@ section.contact {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer {
-    background: black;
+    background: ;
   }
 }
 @media (max-width: 617px) {
@@ -847,7 +847,7 @@ section.contact {
   }
   .footer {
     flex-direction: column-reverse;
-    background: black;
+    background: $bg-color;
   }
   .footer p {
     text-align: center;
