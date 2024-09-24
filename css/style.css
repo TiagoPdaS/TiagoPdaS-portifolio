@@ -774,7 +774,7 @@ section.contact {
     margin: 0 25% 0 25%;
   }
   .home {
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -862,11 +862,7 @@ section.contact {
     justify-content: center;
     align-items: center;
   }
-  .stacks-content {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
+  
   .clock,
   .relogio {
     display: flex;
@@ -882,7 +878,7 @@ section.contact {
     gap: 1rem;
   }
   .home-content {
-    margin-top: 80px;
+    margin-top: 50px;
     font-size: 1.3rem;
     justify-content: center;
     align-items: center;
