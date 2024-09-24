@@ -322,7 +322,7 @@ h2 {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 1.5rem solid #1f242d;
+  border: 0.5rem solid white;
   transition: 0.5s ease;
 }
 
@@ -397,6 +397,20 @@ h2 {
   left: 10px;
   width: 20px;
   height: 20px;
+}
+
+.stacks-coming{
+  display: inline-flex;
+  align-items: center;
+ justify-content: center;
+
+}
+.stacks-coming2{
+  display: inline-flex;
+  align-items: center;
+ justify-content: space-around;
+ 
+
 }
 
 .social-media2 a {
