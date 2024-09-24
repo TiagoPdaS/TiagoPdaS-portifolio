@@ -256,13 +256,13 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15rem;
+  gap: 10rem;
   background: black;
 }
 
 .about-img img {
-  width: 50vh;
-  margin-left: 50px;
+  width: 45vh;
+  margin-left: 40px;
 }
 
 .heading {
@@ -276,15 +276,15 @@ span {
 }
 
 .about-container h3 {
-  font-size: 4rem;
-  text-decoration: underline 8px #1f242d;
+  font-size: 3rem;
+  text-decoration: underline 8px white;
 }
 
 .about-container p {
   font-size: 2rem;
   margin: 2rem 0 3rem;
   padding: 2rem;
-  border: 0.4rem solid #1f242d;
+  border: 0.4rem solid white;
   border-radius: 2rem;
 }
 
