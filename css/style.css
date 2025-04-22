@@ -1,5 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Root variables for colors */
+:root {
+  --primary-color: #4b2c8a;
+  --secondary-color: #1f242d;
+  --text-color: #ffffff;
+  --background-color: #1f242d;
+  --hover-color: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +28,8 @@ html {
 }
 
 body {
-  background: #1f242d;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 section {
@@ -35,7 +46,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: #1f242d;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,36 +54,36 @@ section {
 }
 
 .header.sticky {
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-bottom: 0.1rem solid var(--border-color);
 }
 
 .logo {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 600;
   cursor: default;
 }
 
 span {
-  color: #4b2c8a;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
 .navbar a {
   font-size: 1.7rem;
-  color: #fff;
+  color: var(--text-color);
   margin-left: 4rem;
   transition: 0.3s;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: #4b2c8a;
+  color: var(--primary-color);
 }
 
 #menu-icon {
   font-size: 3.6rem;
-  color: white;
+  color: var(--text-color);
   display: none;
 }
 
@@ -109,7 +120,7 @@ span {
 }
 
 span {
-  color: #4b2c8a;
+  color: var(--primary-color);
 }
 
 .home-content h1 {
@@ -130,18 +141,18 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid #4b2c8a;
+  border: 0.2rem solid var(--primary-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: #4b2c8a;
+  color: var(--primary-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media a:hover {
-  background: #4b2c8a;
-  color: white;
-  box-shadow: 0 0 1rem #4b2c8a;
+  background: var(--primary-color);
+  color: var(--hover-color);
+  box-shadow: 0 0 1rem var(--primary-color);
 }
 
 /*
@@ -196,7 +207,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: left;
-  color: #fff;
+  color: var(--text-color);
   /* Serve para dar o espaçamento entre os itens. */
   min-height: 0.5rem;
   min-width: 0.5rem;
@@ -222,7 +233,7 @@ span {
 .relogio span {
   font-weight: bolder;
   font-size: 3.75rem;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -232,23 +243,25 @@ span {
 
 .relogio span.time {
   font-size: 0.625rem;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: #4b2c8a;
+  background-color: var(--primary-color);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem #4b2c8a;
+  box-shadow: 0 0 1rem var(--primary-color);
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--hover-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
 }
 
 .btn:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
   box-shadow: none;
 }
 
@@ -277,14 +290,14 @@ span {
 
 .about-container h3 {
   font-size: 3rem;
-  text-decoration: underline 8px white;
+  text-decoration: underline 8px var(--hover-color);
 }
 
 .about-container p {
   font-size: 2rem;
   margin: 2rem 0 3rem;
   padding: 2rem;
-  border: 0.4rem solid white;
+ /* border: 0.4rem solid var(--hover-color);*/
   border-radius: 2rem;
 }
 
@@ -322,18 +335,18 @@ h2 {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.5rem solid white;
+  border: 0.5rem solid var(--hover-color);
   transition: 0.5s ease;
 }
 
 .techs-container .techs-box:hover {
   transform: scale(1.25);
-  border-color: #4b2c8a;
+  border-color: var(--primary-color);
 }
 
 .techs-box i {
   font-size: 5rem;
-  color: white;
+  color: var(--hover-color);
 }
 
 .techs-box h3 {
@@ -420,18 +433,18 @@ h2 {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid #4b2c8a;
+  border: 0.2rem solid var(--primary-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: #4b2c8a;
+  color: var(--primary-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media2 a:hover {
-  background: #4b2c8a;
-  color: white;
-  box-shadow: 0 0 1rem #4b2c8a;
+  background: var(--primary-color);
+  color: var(--hover-color);
+  box-shadow: 0 0 1rem var(--primary-color);
 }
 
 .portfolio {
@@ -458,7 +471,7 @@ h2 {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem #1f242d;
+  box-shadow: 0 0 1rem var(--secondary-color);
   overflow: hidden;
   display: flex;
 }
@@ -478,7 +491,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #4b2c8a);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,13 +521,13 @@ h2 {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: #fff;
+  background: var(--hover-color);
   border-radius: 50%;
 }
 
 .portfolio-layer a i {
   font-size: 2rem;
-  color: #323946;
+  color: var(--secondary-color);
 }
 
 section.contact {
@@ -551,7 +564,7 @@ section.contact {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--text-color);
   background: #323946;
   border-radius: 0.8rem;
   margin: 0.7rem 0;
@@ -588,17 +601,17 @@ section.contact {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
-  background-color: #4b2c8a;
+  background-color: var(--primary-color);
   border-radius: 0.8rem;
 }
 
 .footer-iconTop a:hover {
-  box-shadow: 0 0 2rem #4b2c8a;
+  box-shadow: 0 0 2rem var(--primary-color);
 }
 
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: white;
+  color: var(--hover-color);
   justify-content: center;
   align-items: center;
 }
@@ -636,8 +649,8 @@ section.contact {
     width: 100%;
     padding: 1rem 3%;
     background: black;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-top: 0.1rem solid var(--border-color);
+    box-shadow: 0 0.5rem 1rem var(--border-color);
     display: none;
   }
   .navbar.active {
@@ -727,8 +740,8 @@ section.contact {
     width: 100%;
     padding: 1rem 3%;
     background: black;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-top: 0.1rem solid var(--border-color);
+    box-shadow: 0 0.5rem 1rem var(--border-color);
     display: none;
   }
   .navbar.active {
@@ -936,6 +949,4 @@ section.contact {
     width: 100%;
   }
 }
-
-
 /*# sourceMappingURL=style.css.map */
