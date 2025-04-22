@@ -42,8 +42,8 @@ window.onscroll = () => {
 ScrollReveal({ 
     reset: true,
     distance: '80px',
-    duration: 3000,
-    delay:350
+    duration: 2000,
+    delay:50
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin:'top' });
@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content, .about-container h3, .ab
 
 /* =============typed js======================*/
 const typed = new Typed('.multiple-text',{
-    strings: ['Front-End', 'Developer', 'FRONT-END DEVELOPER'],
+    strings: ['Front-End', 'Developer', 'Front-End Developer'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
