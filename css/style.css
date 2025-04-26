@@ -19,7 +19,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "poppins", sans-serif;
+  font-family: "nunito", sans-serif;
 }
 
 html {
@@ -286,16 +286,19 @@ span {
 }
 
 .about-container h2 {
-  text-align: left;
+  text-align: center;
   line-height: 1.1;
 }
 
 .about-container h3 {
-  font-size: 3rem;
-  text-decoration: underline 8px var(--hover-color);
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  /*text-decoration: underline 8px var(--hover-color);*/
 }
 
 .about-container p {
+  text-align: center;
   font-size: 2rem;
   margin: 2rem 0 3rem;
   padding: 2rem;
