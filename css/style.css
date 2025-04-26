@@ -265,6 +265,8 @@ span {
   box-shadow: none;
 }
 
+/* About Section */
+
 .about {
   display: flex;
   justify-content: center;
@@ -285,7 +287,7 @@ span {
 
 .about-container h2 {
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .about-container h3 {

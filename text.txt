@@ -1,0 +1,16 @@
+ 
+ 
+ <ul class="about-list">
+          <li><i class="bi bi-check-circle"></i> Skilled in modern technologies like React</li>
+          <li><i class="bi bi-check-circle"></i> Focused on performance, accessibility, and usability</li>
+          <li><i class="bi bi-check-circle"></i> Passionate about learning and improving</li>
+        </ul>
+
+
+
+        I am a dedicated Front-End Developer with experience in HTML, CSS (Sass/scss), JavaScript, Bootstrap, and WordPress (Elementor). My passion for web development started when I realized the power of transforming ideas and designs into functional and visually appealing interfaces.
+
+Skilled in modern technologies like React
+Focused on performance, accessibility, and usability
+Passionate about learning and improving
+I enjoy collaborating with designers and developers to create innovative solutions. If you're looking for someone committed to delivering high-quality results, let's work together!
