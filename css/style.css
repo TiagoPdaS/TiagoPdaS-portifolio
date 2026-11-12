@@ -765,7 +765,28 @@ section.contact {
 }
 
 .contact form .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 1rem;
+  font-family: inherit;
+  appearance: none;
+  background: linear-gradient(90deg, #4b2c8a 0%, #7c3aed 100%);
+  border: 1px solid rgba(192, 132, 252, 0.35);
+  box-shadow: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact form .btn:hover {
+  background: linear-gradient(90deg, #5b36a0 0%, #8b4cf0 100%);
+  border-color: rgba(192, 132, 252, 0.7);
+  box-shadow: none;
+  transform: translateY(-2px);
+}
+
+.contact form .btn:focus-visible {
+  outline: 2px solid #c084fc;
+  outline-offset: 3px;
 }
 
 .footer {
