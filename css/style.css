@@ -543,6 +543,7 @@ h2 {
 .techs-group h3 {
   color: #fff;
   font-size: 2rem;
+  text-align: center;
   margin-bottom: 1.6rem;
   padding-bottom: 0.8rem;
   border-bottom: 1px solid rgba(192, 132, 252, 0.3);
@@ -596,6 +597,13 @@ h2 {
   object-fit: contain;
 }
 
+.tech-item > .bi {
+  flex: 0 0 3.2rem;
+  font-size: 3.2rem;
+  line-height: 1;
+  text-align: center;
+}
+
 .portfolio {
   margin: 3rem black;
   display: flex;
@@ -608,6 +616,10 @@ h2 {
 .portfolio h2 {
   margin: 1rem;
   font-size: 5rem;
+}
+
+.portfolio h2 span {
+  text-decoration: none;
 }
 
 .portfolio-container {
@@ -708,6 +720,25 @@ section.contact {
   flex-wrap: wrap;
 }
 
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  text-align: left;
+}
+
+.contact-field label,
+.contact-message-label {
+  margin: 0.7rem 0 0.2rem;
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+
+.contact-field label span {
+  color: #b7b2c2;
+  text-decoration: none;
+}
+
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
@@ -720,7 +751,13 @@ section.contact {
 }
 
 .contact form .input-box input {
-  width: 49%;
+  width: 100%;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: #b7b2c2;
+  opacity: 1;
 }
 
 .contact form textarea {
@@ -1049,7 +1086,7 @@ section.contact {
   .portfolio-container {
     grid-template-columns: 1fr;
   }
-  .contact form .input-box input {
+  .contact-field {
     width: 100%;
   }
   .footer {
@@ -1097,7 +1134,7 @@ section.contact {
     align-items: center;
     text-align: center;
   }
-  .contact form .input-box input {
+  .contact-field {
     width: 100%;
   }
 }

@@ -209,6 +209,8 @@
           <li class="tech-item"><img src="./images/sass.png" alt="" /><span>Sass</span></li>
           <li class="tech-item"><img src="./images/react.svg" alt="" /><span>React</span></li>
           <li class="tech-item"><img src="./images/bootstrap.png" alt="" /><span>Bootstrap</span></li>
+          <li class="tech-item"><img src="./images/php-logo.png" alt="" /><span>PHP</span></li>
+          <li class="tech-item"><i class="bi bi-layers" aria-hidden="true"></i><span>Laravel</span></li>
         </ul>
       </div>
 
@@ -219,6 +221,7 @@
           <li class="tech-item"><img src="./images/git.png" alt="" /><span>Git</span></li>
           <li class="tech-item"><img src="./images/github-icon (2).png" alt="" /><span>GitHub</span></li>
           <li class="tech-item"><img src="./images/visual-studio-code.png" alt="" /><span>VS Code</span></li>
+          <li class="tech-item"><i class="bi bi-stars" aria-hidden="true"></i><span>Claude</span></li>
         </ul>
       </div>
     </div>
@@ -282,16 +285,27 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
     <form id="formulario" action="https://formcarry.com/s/agxiCDD7pb9" method="POST" enctype="multipart/form-data">
-      <!-- campos do formulário aqui -->
-
       <div class="input-box">
-        <input type="text" placeholder="Full Name" id="nome" name="nome" required />
-        <input type="email" placeholder="Email address" id="email" name="E-mail" required />
+        <div class="contact-field">
+          <label for="nome">Full Name</label>
+          <input type="text" placeholder="Full Name" id="nome" name="nome" autocomplete="name" required />
+        </div>
+        <div class="contact-field">
+          <label for="email">Email Address</label>
+          <input type="email" placeholder="Email address" id="email" name="E-mail" autocomplete="email" required />
+        </div>
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Mobile Number" />
-        <input type="text" placeholder="Email Subject" />
+        <div class="contact-field">
+          <label for="telefone">Mobile Number <span>(optional)</span></label>
+          <input type="tel" placeholder="Mobile Number (optional)" id="telefone" name="telefone" autocomplete="tel" />
+        </div>
+        <div class="contact-field">
+          <label for="assunto">Email Subject</label>
+          <input type="text" placeholder="Email Subject" id="assunto" name="assunto" required />
+        </div>
       </div>
+      <label class="contact-message-label" for="mensagem">Your Message</label>
       <textarea name="mensagem" cols="30" rows="10" placeholder="Your Message" required id="mensagem"></textarea>
       <input id="enviar" type="submit" value="Send Message" class="btn" />
     </form>
