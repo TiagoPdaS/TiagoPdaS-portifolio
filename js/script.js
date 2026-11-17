@@ -44,7 +44,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-preview, .portfolio-choice, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img, .techs-container', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content, .about-container h3, .about-container p, .clock', { origin: 'right' });
 
@@ -57,4 +57,93 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
+/* =============portfolio project selector======================*/
+const portfolioChoices = document.querySelectorAll('.portfolio-choice');
+const portfolioPreview = document.querySelector('.portfolio-preview');
+let portfolioImage = document.querySelector('#portfolio-featured-image');
+let portfolioIncomingImage = document.querySelector('#portfolio-incoming-image');
+const portfolioTitle = document.querySelector('#portfolio-title');
+const portfolioDescription = document.querySelector('#portfolio-description');
+const portfolioLink = document.querySelector('#portfolio-link');
+const portfolioLinkLabel = document.querySelector('#portfolio-link-label');
+const portfolioNumber = document.querySelector('#portfolio-number');
+let selectedPortfolioChoice = document.querySelector('.portfolio-choice.is-active');
+let isPortfolioTransitioning = false;
+
+const updatePortfolioLink = choice => {
+    portfolioLink.hidden = false;
+    portfolioLink.href = choice.dataset.href || '#contact';
+    portfolioLinkLabel.textContent = choice.dataset.linkLabel || 'Contact about this project';
+
+    if (choice.dataset.external === 'true') {
+        portfolioLink.target = '_blank';
+        portfolioLink.rel = 'noopener noreferrer';
+    } else {
+        portfolioLink.removeAttribute('target');
+        portfolioLink.removeAttribute('rel');
+    }
+};
+
+const finishPortfolioTransition = (outgoingImage, incomingImage) => {
+    outgoingImage.classList.remove('is-outgoing');
+    outgoingImage.classList.add('is-next');
+    outgoingImage.removeAttribute('src');
+    outgoingImage.alt = '';
+    outgoingImage.setAttribute('aria-hidden', 'true');
+
+    incomingImage.classList.remove('is-entering');
+    incomingImage.classList.add('is-current');
+    incomingImage.removeAttribute('aria-hidden');
+
+    portfolioImage = incomingImage;
+    portfolioIncomingImage = outgoingImage;
+    portfolioChoices.forEach(choice => {
+        choice.disabled = false;
+    });
+    isPortfolioTransitioning = false;
+};
+
+updatePortfolioLink(selectedPortfolioChoice);
+
+portfolioChoices.forEach((choice, index) => {
+    choice.addEventListener('click', () => {
+        if (isPortfolioTransitioning || choice === selectedPortfolioChoice) {
+            return;
+        }
+
+        isPortfolioTransitioning = true;
+        selectedPortfolioChoice = choice;
+        portfolioChoices.forEach(item => {
+            item.classList.toggle('is-active', item === choice);
+            item.setAttribute('aria-pressed', String(item === choice));
+            item.disabled = true;
+        });
+
+        portfolioTitle.textContent = choice.dataset.title;
+        portfolioDescription.textContent = choice.dataset.description;
+        updatePortfolioLink(choice);
+        portfolioNumber.textContent = `${String(index + 1).padStart(2, '0')} / ${String(portfolioChoices.length).padStart(2, '0')}`;
+
+        const outgoingImage = portfolioImage;
+        const incomingImage = portfolioIncomingImage;
+        incomingImage.src = choice.dataset.image;
+        incomingImage.alt = choice.dataset.alt;
+        incomingImage.removeAttribute('aria-hidden');
+        outgoingImage.setAttribute('aria-hidden', 'true');
+
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!prefersReducedMotion) {
+            incomingImage.addEventListener('animationend', () => {
+                finishPortfolioTransition(outgoingImage, incomingImage);
+            }, { once: true });
+        }
+
+        outgoingImage.classList.replace('is-current', 'is-outgoing');
+        incomingImage.classList.replace('is-next', 'is-entering');
+
+        if (prefersReducedMotion) {
+            finishPortfolioTransition(outgoingImage, incomingImage);
+        }
+    });
+});
 

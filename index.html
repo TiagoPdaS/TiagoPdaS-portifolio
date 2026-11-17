@@ -230,53 +230,76 @@
   <!--portfolio section design-->
   <section class="portfolio" id="portfolio">
     <h2 class="heading">Latest <span>Projects</span></h2>
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="images/portfolio1.jpg" alt="portfolio-image" />
-        <div class="portfolio-layer">
-          <h4>Web Developer</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
+    <div class="portfolio-showcase">
+      <div class="portfolio-details" aria-live="polite">
+        <p class="portfolio-eyebrow">Selected work</p>
+        <h3 id="portfolio-title">Web Project 01</h3>
+        <p id="portfolio-description">A web development project from my portfolio.</p>
+        <a class="portfolio-link" id="portfolio-link" href="#contact">
+          <span id="portfolio-link-label">Contact about this project</span>
+          <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+        </a>
       </div>
-      <div class="portfolio-box">
-        <img src="images/portfolio2.jpg" alt="portfolio-image" />
-        <div class="portfolio-layer">
-          <h4>Web Developer</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+
+      <div class="portfolio-preview">
+        <div class="portfolio-preview-shadow" aria-hidden="true"></div>
+        <div class="portfolio-preview-stack">
+          <img class="portfolio-preview-image is-current" id="portfolio-featured-image"
+            src="images/portfolio1.jpg" alt="Preview of web project 1" />
+          <img class="portfolio-preview-image is-next" id="portfolio-incoming-image" alt="" aria-hidden="true" />
         </div>
+        <span class="portfolio-preview-number" id="portfolio-number" aria-hidden="true">01 / 06</span>
       </div>
-      <div class="portfolio-box">
-        <img src="images/portfolio3.jpg" alt="portfolio-image" />
-        <div class="portfolio-layer">
-          <h4>Web Developer</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
-      </div>
-      <div class="portfolio-box">
-        <img src="images/portfolio4.jpg" alt="portfolio-image" />
-        <div class="portfolio-layer">
-          <h4>Web Developer</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
-      </div>
-      <div class="portfolio-box">
-        <img src="images/portfolio5.jpg" alt="portfolio-image" />
-        <div class="portfolio-layer">
-          <h4>Web Developer</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
-      </div>
-      <div class="portfolio-box">
-        <img src="images/portfolio6.jpg" alt="portfolio-image" />
-        <div class="portfolio-layer">
-          <h4>The Random Number </h4>
-          <a href="https://randomnumbertiago.netlify.app/"><i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
+
+      <div class="portfolio-list" role="group" aria-label="Choose a portfolio project">
+        <button class="portfolio-choice is-active" type="button" aria-pressed="true"
+          data-image="images/portfolio1.jpg" data-alt="Preview of web project 1" data-title="Web Project 01"
+          data-description="A web development project from my portfolio." data-href="#contact"
+          data-link-label="Contact about this project">
+          <span class="portfolio-choice-thumb"><img src="images/portfolio1.jpg" alt="" /></span>
+          <span class="portfolio-choice-copy"><strong>Web Project 01</strong><small>Web development</small></span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button class="portfolio-choice" type="button" aria-pressed="false"
+          data-image="images/portfolio2.jpg" data-alt="Preview of web project 2" data-title="Web Project 02"
+          data-description="A web development project from my portfolio." data-href="#contact"
+          data-link-label="Contact about this project">
+          <span class="portfolio-choice-thumb"><img src="images/portfolio2.jpg" alt="" /></span>
+          <span class="portfolio-choice-copy"><strong>Web Project 02</strong><small>Web development</small></span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button class="portfolio-choice" type="button" aria-pressed="false"
+          data-image="images/portfolio3.jpg" data-alt="Preview of web project 3" data-title="Web Project 03"
+          data-description="A web development project from my portfolio." data-href="#contact"
+          data-link-label="Contact about this project">
+          <span class="portfolio-choice-thumb"><img src="images/portfolio3.jpg" alt="" /></span>
+          <span class="portfolio-choice-copy"><strong>Web Project 03</strong><small>Web development</small></span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button class="portfolio-choice" type="button" aria-pressed="false"
+          data-image="images/portfolio4.jpg" data-alt="Preview of web project 4" data-title="Web Project 04"
+          data-description="A web development project from my portfolio." data-href="#contact"
+          data-link-label="Contact about this project">
+          <span class="portfolio-choice-thumb"><img src="images/portfolio4.jpg" alt="" /></span>
+          <span class="portfolio-choice-copy"><strong>Web Project 04</strong><small>Web development</small></span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button class="portfolio-choice" type="button" aria-pressed="false"
+          data-image="images/portfolio5.jpg" data-alt="Preview of web project 5" data-title="Web Project 05"
+          data-description="A web development project from my portfolio." data-href="#contact"
+          data-link-label="Contact about this project">
+          <span class="portfolio-choice-thumb"><img src="images/portfolio5.jpg" alt="" /></span>
+          <span class="portfolio-choice-copy"><strong>Web Project 05</strong><small>Web development</small></span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button class="portfolio-choice" type="button" aria-pressed="false"
+          data-image="images/portfolio6.jpg" data-alt="Preview of The Random Number project" data-title="The Random Number"
+          data-description="An interactive random number generator built for the web."
+          data-href="https://randomnumbertiago.netlify.app/" data-link-label="Open project" data-external="true">
+          <span class="portfolio-choice-thumb"><img src="images/portfolio6.jpg" alt="" /></span>
+          <span class="portfolio-choice-copy"><strong>The Random Number</strong><small>Interactive app</small></span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
   </section>
